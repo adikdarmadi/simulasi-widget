@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>announcement-suspend-idxnet</title>
+    </head>
+    <body>
+        <div id="idxnet-content"></div>
+        <script type="text/javascript">
+            var init = async function (){
+                const divC = document.getElementById("spop-content")
+                divC.innerHTML = await (await fetch('index.html')).text();
+
+                var link = document.createElement("link");
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                link.href = 'style.css';
+                document.head.appendChild(link);
+
+                var wg = document.createElement("script");
+                wg.src = 'widget.js';
+                document.body.appendChild(wg);               
+                
+                wg.onload = function () {
+                    var ws = document.createElement("script");
+                    ws.type = "text/javascript";
+                    ws.src = remoteHost + dataWidget + "/socket.js";
+                    document.head.appendChild(ws);      
+                  };
+
+            }
+            init();
+        </script>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Embed</title>
+    <script src="imds-widget.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+       /*#leftbox {
+            float: left;
+            margin-right: 2px;
+            padding-right: 10px;
+            border-right: solid 1px red;
+            width: 29%;
+            min-height: 280px;
+        }
+
+        #rightbox {
+            text- justify-content: ;
+            float: right;
+            margin-left: 2px;
+            padding-left: 10px;
+            border-left: solid 1px red;
+            width: 29%;
+            min-height: 280px;
+        }
+
+        #middlebox {
+            float: left;
+            border: 2px green;
+            width: 40%;
+            margin: 2px;
+            min-height: 280px;
+        }
+
+        #midcontent {
+            margin: auto;
+            width: 90%;
+        } */
+
+        #boxes {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+          }
+          
+        #boxes .content {
+            padding: 10px;
+            margin: 2px;
+            width: 40%;
+        }
+
+        #boxes .side {
+            padding: 10px;
+            margin: 2px;
+            width: 27%;
+        }
+
+        #boxes h2 {
+            border: 1px solid #c3c3c3;
+            text-align: center;
+            display: block;
+        }
+
+        #midcontent {
+            margin: auto;
+            width: 90%;
+        }
+
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<h1>Contoh Website yang diembed widgetnya</h1>
+<div id="boxes">
+    <div class="side">
+        <h2>Kotak Kiri</h2>
+        <div data-widget="announcement-suspend-idxnet-widget" data-token="4b15ac54c381467cb4e90bbc439a472b"></div>
+        <br/>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Eu augue ut lectus arcu.
+        </div>
+        <br/>
+        <div data-widget="announcement-uma-widget" data-token="4b15ac54c381467cb4e90bbc439a472b"></div>
+        <br/>
+        <div>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </div>
+    <div class="content">
+        <h2>Info Utama</h2>
+        <div id="midcontent">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Amet nisl suscipit adipiscing bibendum est ultricies integer. Scelerisque varius morbi
+            enim nunc faucibus a pellentesque. 
+        </div>
+        <br/>
+        <div data-widget="graphic-price-movement-3-years" 
+            data-token="4b15ac54c381467cb4e90bbc439a472b" 
+            data-securitycode="AALI,AMAR,ARMY,BIRD,FISH,RBMS"></div>
+        <br/>
+        <div>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </div>
+    <div class="side">
+        <h2>Kotak Kanan</h2>
+        <div data-widget="idx-real-time-for-listed-company-widget" data-token="4b15ac54c381467cb4e90bbc439a472b"
+        data-securitycode="AALI,AMAR,ARMY,BIRD,FISH,RBMS"></div>
+        <br/>
+        <div>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <br/>
+        <div data-widget="announcement-suspend-spop-widget" data-token="4b15ac54c381467cb4e90bbc439a472b"></div>
+        <br/>
+        <div>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>announcement-price</title>
+    </head>
+    <body>
+        <div id="price-content"></div>
+        <script type="text/javascript">
+            var init = async function (){
+                const divC = document.getElementById("price-content")
+                divC.innerHTML = await (await fetch('index.html')).text();
+
+                var js = document.createElement("script");
+                js.src = 'widget.js';
+                document.body.appendChild(js);
+
+                var link = document.createElement("link");
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                link.href = 'style.css';
+                document.head.appendChild(link);
+            }
+            init();
+        </script>
+</html>

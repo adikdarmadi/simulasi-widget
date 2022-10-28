@@ -1,0 +1,14 @@
+  /*Modal*/
+.w3-modal-content {
+    width: 600px;
+    border-radius: 16px;
+    text-align: left;
+}
+.content-modal-data {
+    padding: 32px 16px;
+    text-align: left;
+}
+
+.w3-modal {
+  z-index: 1000000 !important;
+}
