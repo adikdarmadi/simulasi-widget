@@ -15,7 +15,7 @@ var iniSocket_idxnet = () => {
   }
 
   socket_idxnet.onopen = function (e) {
-    socket_idxnet.send("send token auth:" + dataTokenS[proses_graphic] + "---" + nama_domain_graphic + "---" + datasScuritycodeS[proses_graphic]);
+    socket_idxnet.send("send token auth:" + dataTokenS[proses_graphic] + "---" + nama_domain_idxnet + "---" + datasScuritycodeS[proses_graphic]);
     tm = setInterval(ping_idxnet, 30000);
   };
 

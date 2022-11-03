@@ -15,7 +15,7 @@ var iniSocket_uma = () => {
   }
 
   socket_uma.onopen = function (e) {
-    socket_uma.send("send token auth:" + dataTokenS[proses_graphic] + "---" + nama_domain_graphic + "---" + datasScuritycodeS[proses_graphic]);
+    socket_uma.send("send token auth:" + dataTokenS[proses_graphic] + "---" + nama_domain_uma + "---" + datasScuritycodeS[proses_uma]);
     tm = setInterval(ping_uma, 30000);
   };
 

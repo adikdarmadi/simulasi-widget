@@ -15,7 +15,7 @@ var iniSocket_spop = () => {
   }
 
   socket_spop.onopen = function (e) {
-    socket_spop.send("send token auth:" + dataTokenS[proses_graphic] + "---" + nama_domain_graphic + "---" + datasScuritycodeS[proses_graphic]);
+    socket_spop.send("send token auth:" + dataTokenS[proses_graphic] + "---" + nama_domain_spop + "---" + datasScuritycodeS[proses_spop]);
     tm = setInterval(ping_spop, 30000);
   };
 
